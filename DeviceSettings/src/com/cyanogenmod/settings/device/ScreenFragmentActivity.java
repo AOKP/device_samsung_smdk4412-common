@@ -42,6 +42,7 @@ public class ScreenFragmentActivity extends PreferenceFragment {
     private mDNIeNegative mmDNIeNegative;
     private LedFade mLedFade;
     private CheckBoxPreference mTouchKey;
+    private TouchkeyTimeout mTouchKeyTimeout;
 
     private static boolean sSPenSupported;
     private static boolean sTouchkeySupport;
@@ -59,17 +60,17 @@ public class ScreenFragmentActivity extends PreferenceFragment {
 
         /* CABC */
         mCABC = (CABC) findPreference(DeviceSettings.KEY_CABC);
-        mCABC.setEnabled(CABC.isSupported());
+        mCABC.setEnabled(CABC.isSupported(res.getString(R.string.mdnie_cabc_sysfs_file)));
 
         /* mDNIe */
         mmDNIeScenario = (mDNIeScenario) findPreference(DeviceSettings.KEY_MDNIE_SCENARIO);
-        mmDNIeScenario.setEnabled(mDNIeScenario.isSupported());
+        mmDNIeScenario.setEnabled(mDNIeScenario.isSupported(res.getString(R.string.mdnie_scenario_sysfs_file)));
 
         mmDNIeMode = (mDNIeMode) findPreference(DeviceSettings.KEY_MDNIE_MODE);
-        mmDNIeMode.setEnabled(mDNIeMode.isSupported());
+        mmDNIeMode.setEnabled(mDNIeMode.isSupported(res.getString(R.string.mdnie_mode_sysfs_file)));
 
         mmDNIeNegative = (mDNIeNegative) findPreference(DeviceSettings.KEY_MDNIE_NEGATIVE);
-        mmDNIeNegative.setEnabled(mDNIeNegative.isSupported());
+        mmDNIeNegative.setEnabled(mDNIeNegative.isSupported(res.getString(R.string.mdnie_negative_sysfs_file)));
 
         /* LED */
         mLedFade = (LedFade) findPreference(DeviceSettings.KEY_LED_FADE);
@@ -80,10 +81,12 @@ public class ScreenFragmentActivity extends PreferenceFragment {
         mTouchKey = (CheckBoxPreference)preferenceScreen.findPreference(DeviceSettings.KEY_TOUCHKEY_LIGHT);
         mTouchKey.setEnabled(sTouchkeySupport);
 
+        mTouchKeyTimeout = (TouchkeyTimeout)preferenceScreen.findPreference(DeviceSettings.KEY_TOUCHKEY_TIMEOUT);
+
         if (mTouchKey.isChecked() && mTouchKey.isEnabled()) {
-            preferenceScreen.findPreference(DeviceSettings.KEY_TOUCHKEY_TIMEOUT).setEnabled(true);
+            mTouchKeyTimeout.setEnabled(mTouchKeyTimeout.isSupported());
         } else {
-            preferenceScreen.findPreference(DeviceSettings.KEY_TOUCHKEY_TIMEOUT).setEnabled(false);
+            mTouchKeyTimeout.setEnabled(false);
         }
 
         /* S-Pen */
@@ -106,11 +109,11 @@ public class ScreenFragmentActivity extends PreferenceFragment {
             if (((CheckBoxPreference)preference).isChecked()) {
                 Utils.writeValue(FILE_TOUCHKEY_DISABLE, "0");
                 Utils.writeValue(FILE_TOUCHKEY_BRIGHTNESS, "1");
-                preferenceScreen.findPreference(DeviceSettings.KEY_TOUCHKEY_TIMEOUT).setEnabled(true);
+                mTouchKeyTimeout.setEnabled(mTouchKeyTimeout.isSupported());
             } else {
                 Utils.writeValue(FILE_TOUCHKEY_DISABLE, "1");
                 Utils.writeValue(FILE_TOUCHKEY_BRIGHTNESS, "2");
-                preferenceScreen.findPreference(DeviceSettings.KEY_TOUCHKEY_TIMEOUT).setEnabled(false);
+                mTouchKeyTimeout.setEnabled(false);
             }
         }
         return true;
