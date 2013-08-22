@@ -21,4 +21,7 @@
 
     <!-- Dock Settings -->
     <bool name="has_dock_settings">true</bool>
+
+    <!-- Home button wake support -->
+    <bool name="config_show_homeWake">true</bool>
 </resources>
