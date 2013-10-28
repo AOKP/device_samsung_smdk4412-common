@@ -152,7 +152,8 @@ PRODUCT_COPY_FILES += \
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=131072 \
-    debug.hwui.render_dirty_regions=false
+    debug.hwui.render_dirty_regions=false \
+    ro.bq.gpu_to_cpu_unsupported=1
 
 PRODUCT_TAGS += dalvik.gc.type-precise
 
