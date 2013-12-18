@@ -156,3 +156,7 @@ BOARD_BATTERY_DEVICE_NAME := "battery"
 
 # inherit from the proprietary version
 -include vendor/samsung/smdk4412-common/BoardConfigVendor.mk
+
+#exFat
+COMMON_GLOBAL_CFLAGS += -DEXFAT_KMOD
+
