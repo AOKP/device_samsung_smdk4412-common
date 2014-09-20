@@ -14,4 +14,51 @@
      See the License for the specific language governing permissions and
      limitations under the License.
  -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"/>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">高级设置</string>
+  <string name="defaults_button">重置为默认设置</string>
+  <string name="category_screen_title">屏幕</string>
+  <string name="screen_colors_title">颜色</string>
+  <string name="cabc_title_head">CABC</string>
+  <string name="cabc_summary_head">启用内容自适应背光控制</string>
+  <string name="mdnie_scenario_title_head">场景</string>
+  <string name="mdnie_scenario_summary_head">设置 mDNIe 场景</string>
+  <string name="mdnie_mode_title_head">模式</string>
+  <string name="mdnie_mode_summary_head">设置 mDNIe 模式</string>
+  <string name="mdnie_negative_title_head">负极模式</string>
+  <string name="mdnie_negative_summary_head">启用/禁用反色</string>
+  <string name="led_subcat_title">通知灯</string>
+  <string name="led_fade_title_head">LED 衰减</string>
+  <string name="led_fade_summary_head">启用 LED 显示时的平滑衰减。</string>
+  <string name="touchkey_subcat_title">触摸键</string>
+  <string name="touchkey_light_title_head">背光</string>
+  <string name="touchkey_light_summary_off">启用背光</string>
+  <string name="touchkey_light_summary_on">禁用背光</string>
+  <string name="touchkey_timeout_title_head">背光超时</string>
+  <string name="touchkey_timeout_summary_head">设置背光灯的超时时间</string>
+  <string name="category_haptic_title">触摸</string>
+  <string name="vibrator_title">振动</string>
+  <string name="vibrator_tuning_title">振动强度</string>
+  <string name="vibrator_tuning_summary_head">调整震动反馈强度</string>
+  <string name="vibrator_warning">不推荐高于 %1$d 的振动强度</string>
+  <string name="category_radio_title">广播</string>
+  <string name="hspa_title_head">HSPA</string>
+  <string name="hspa_summary_head">启用 HSDPA/HSUPA</string>
+  <string name="category_audio_title">音频</string>
+  <string name="dockaudio_subcat_title">音频座</string>
+  <string name="use_dock_audio_title_head">使用 USB 音频座</string>
+  <string name="use_dock_audio_summary_head">在音频座上使用被动音频输出</string>
+  <string name="incallaudio_subcat_title">来电音频音量</string>
+  <string name="incall_earpiece_audio_title_head">头戴式耳机</string>
+  <string name="incall_headphone_audio_title_head">耳机</string>
+  <string name="incall_speaker_audio_title_head">扬声器</string>
+  <string name="incall_bt_audio_title_head">蓝牙耳机</string>
+  <string name="incall_warning">不推荐高于 %1$d 的振动强度</string>
+  <string name="audioout_subcat_title">流媒体音频音量</string>
+  <string name="audioout_headphone_audio_title_head">耳机</string>
+  <string name="audioout_speaker_audio_title_head">扬声器</string>
+  <string name="audioout_warning">不推荐高于 %1$d 的振动强度</string>
+  <string name="spen_subcat_title">S-Pen</string>
+  <string name="spen_power_save_title_head">节能模式</string>
+  <string name="spen_power_save_summary_head">当 S-Pen 在设备中时，禁用手写板</string>
+</resources>
