@@ -14,4 +14,51 @@
      See the License for the specific language governing permissions and
      limitations under the License.
  -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"/>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Avancerade inställningar</string>
+  <string name="defaults_button">Återställ standardvärden</string>
+  <string name="category_screen_title">Skärm</string>
+  <string name="screen_colors_title">Färger</string>
+  <string name="cabc_title_head">CABC</string>
+  <string name="cabc_summary_head">Aktivera anpassningsbar bakgrundsbelysning</string>
+  <string name="mdnie_scenario_title_head">Scenario</string>
+  <string name="mdnie_scenario_summary_head">Ställ in mDNIe-scenario</string>
+  <string name="mdnie_mode_title_head">Läge</string>
+  <string name="mdnie_mode_summary_head">Ställ in mDNIe-läget</string>
+  <string name="mdnie_negative_title_head">Negativläge</string>
+  <string name="mdnie_negative_summary_head">Aktivera/inaktivera inverterade färger</string>
+  <string name="led_subcat_title">Notifierings-LED</string>
+  <string name="led_fade_title_head">LED-fading</string>
+  <string name="led_fade_summary_head">Aktivera mjuk LED-fading istället för skarp blinkning.</string>
+  <string name="touchkey_subcat_title">Touchkeys</string>
+  <string name="touchkey_light_title_head">Bakgrundsbelysning</string>
+  <string name="touchkey_light_summary_off">Aktivera bakgrundsbelysningen</string>
+  <string name="touchkey_light_summary_on">Inaktivera bakgrundsljus</string>
+  <string name="touchkey_timeout_title_head">Bakgrundsbelysning timeout</string>
+  <string name="touchkey_timeout_summary_head">Ange timeout för bakgrundsbelysningen</string>
+  <string name="category_haptic_title">Haptisk</string>
+  <string name="vibrator_title">Vibrator</string>
+  <string name="vibrator_tuning_title">Vibrationstyrka</string>
+  <string name="vibrator_tuning_summary_head">Justera styrkan i vibrationsåterkoppling</string>
+  <string name="vibrator_warning">Värden högre än %1$d rekommenderas inte</string>
+  <string name="category_radio_title">Radio</string>
+  <string name="hspa_title_head">HSPA</string>
+  <string name="hspa_summary_head">Aktivera HSDPA/HSUPA</string>
+  <string name="category_audio_title">Ljud</string>
+  <string name="dockaudio_subcat_title">Dock ljud</string>
+  <string name="use_dock_audio_title_head">Använda USB dockljud</string>
+  <string name="use_dock_audio_summary_head">Använda passivt ljud ut på dockan</string>
+  <string name="incallaudio_subcat_title">Samtalsvolym</string>
+  <string name="incall_earpiece_audio_title_head">Hörlur</string>
+  <string name="incall_headphone_audio_title_head">Hörlurar</string>
+  <string name="incall_speaker_audio_title_head">Telefonhögtalare</string>
+  <string name="incall_bt_audio_title_head">BT</string>
+  <string name="incall_warning">Värden högre än %1$d rekommenderas inte</string>
+  <string name="audioout_subcat_title">Strömmande ljudvolymer</string>
+  <string name="audioout_headphone_audio_title_head">Hörlurar</string>
+  <string name="audioout_speaker_audio_title_head">Telefonhögtalare</string>
+  <string name="audioout_warning">Värden högre än %1$d rekommenderas inte</string>
+  <string name="spen_subcat_title">S-Pen</string>
+  <string name="spen_power_save_title_head">Energisparläge</string>
+  <string name="spen_power_save_summary_head">Inaktivera stylus digitizer när S-Pen är i enheten</string>
+</resources>
